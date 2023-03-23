@@ -1,4 +1,6 @@
 
+import census.CensusAnalyser;
+import census.CensusAnalyserException;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -43,7 +45,7 @@ public class CensusAnalyserTest {
     public void givenIndiaCensusData_WithWrongHeader_ShouldThrowException() {
         try {
             CensusAnalyser censusAnalyser = new CensusAnalyser();
-            censusAnalyser.loadIndiaCensusData(WRONG_CSV_FILE_PATH);
+            censusAnalyser.loadIndiaCensusData(INDIA_CENSUS_CSV_FILE_PATH);
         } catch (CensusAnalyserException e) {
             Assert.assertEquals(CensusAnalyserException.ExceptionType.CENSUS_FILE_PROBLEM, e.type);
         }

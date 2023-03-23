@@ -1,3 +1,5 @@
+package census;
+
 import com.opencsv.bean.CsvBindByName;
 
 public class IndiaCensusCSV {

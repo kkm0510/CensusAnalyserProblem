@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6a2e457-a79d-4d29-94b6-527c427575e6" name="Changes" comment="ADDED : dependencies">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CensusAnalyser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CensusAnalyserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IndiaCensusCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CensusAnalyserTest.java" afterDir="false" />
+    <list default="true" id="e6a2e457-a79d-4d29-94b6-527c427575e6" name="Changes" comment="ADDED : code to for all test cases">
+      <change afterPath="$PROJECT_DIR$/src/main/java/state/IndiaStatesCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/state/StateAnalyser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/state/StateAnalyserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StateAnalyserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/IndiaStateCensusData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/IndiaStateCensusData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/census/CensusAnalyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CensusAnalyserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/census/CensusAnalyserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IndiaCensusCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/census/IndiaCensusCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CensusAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CensusAnalyserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="UC1-LOAD_INFORMATION" />
       </map>
     </option>
   </component>
@@ -61,17 +63,7 @@
       <recent name="C:\Users\DELL\OneDrive\Desktop\Assignments\CensusAnalyserProblem\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CensusAnalyserTest.givenIndiaCensusData_WithWrongHeader_ShouldThrowException">
-    <configuration name="CensusAnalyserTest.givenIndiaCensusData_WithWrongFile_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Day29-CensusAnalyserProblem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CensusAnalyserTest" />
-      <option name="METHOD_NAME" value="givenIndiaCensusData_WithWrongFile_ShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StateAnalyserTest.givenIndianStateCSVFileReturnsCorrectRecords">
     <configuration name="CensusAnalyserTest.givenIndiaCensusData_WithWrongHeader_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day29-CensusAnalyserProblem" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,11 +84,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CensusAnalyserTest.givenIndianCensusCSVFileReturnsCorrectRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StateAnalyserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day29-CensusAnalyserProblem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CensusAnalyserTest" />
-      <option name="METHOD_NAME" value="givenIndianCensusCSVFileReturnsCorrectRecords" />
+      <option name="MAIN_CLASS_NAME" value="StateAnalyserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateAnalyserTest.givenIndiaStateData_WithWrongHeader_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Day29-CensusAnalyserProblem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StateAnalyserTest" />
+      <option name="METHOD_NAME" value="givenIndiaStateData_WithWrongHeader_ShouldThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateAnalyserTest.givenIndianStateCSVFileReturnsCorrectRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Day29-CensusAnalyserProblem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StateAnalyserTest" />
+      <option name="METHOD_NAME" value="givenIndianStateCSVFileReturnsCorrectRecords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,10 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StateAnalyserTest.givenIndianStateCSVFileReturnsCorrectRecords" />
         <item itemvalue="JUnit.CensusAnalyserTest.givenIndiaCensusData_WithWrongHeader_ShouldThrowException" />
+        <item itemvalue="JUnit.StateAnalyserTest.givenIndiaStateData_WithWrongHeader_ShouldThrowException" />
+        <item itemvalue="JUnit.StateAnalyserTest" />
         <item itemvalue="JUnit.CensusAnalyserTest.givenIndiaCensusData_WithWrongType_ShouldThrowException" />
-        <item itemvalue="JUnit.CensusAnalyserTest.givenIndiaCensusData_WithWrongFile_ShouldThrowException" />
-        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianCensusCSVFileReturnsCorrectRecords" />
       </list>
     </recent_temporary>
   </component>
@@ -134,11 +146,39 @@
       <option name="project" value="LOCAL" />
       <updated>1679581477773</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ADDED : code to for all test cases">
+      <created>1679588434545</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679588434546</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADDED : dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADDED : dependencies" />
+    <MESSAGE value="ADDED : code to for all test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADDED : code to for all test cases" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/StateAnalyserTest.java</url>
+          <line>43</line>
+          <properties class="StateAnalyserTest" method="givenIndiaStateData_WithWrongHeader_ShouldThrowException">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/StateAnalyserTest.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
